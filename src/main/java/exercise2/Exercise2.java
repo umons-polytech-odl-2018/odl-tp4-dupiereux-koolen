@@ -12,7 +12,7 @@ public class Exercise2 implements Serializable{
 	public static void save(Classroom classroom, Path filePath) throws IOException{
 		try(OutputStream output = Files.newOutputStream(filePath)){
 			ObjectOutput objectOutput = new ObjectOutputStream(output);
-			objectOutput.writeObject((classroom));
+			objectOutput.writeObject(classroom);
 		}
 
 	}
